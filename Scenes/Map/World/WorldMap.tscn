@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://b5io42hl1yngq"]
+[gd_scene load_steps=8 format=3 uid="uid://b5io42hl1yngq"]
 
 [ext_resource type="Script" path="res://Scenes/Map/World/WorldMap.gd" id="1_pu3eo"]
 [ext_resource type="PackedScene" uid="uid://dc2hmwdxl7plj" path="res://Scenes/Map/World/MapTile.tscn" id="2_d70xm"]
 [ext_resource type="PackedScene" uid="uid://d001yyfb1x3tw" path="res://Scenes/Map/World/WallTile.tscn" id="3_khupl"]
 [ext_resource type="Texture2D" uid="uid://53tyqha8ri40" path="res://Assets/Img/Tilemap.png" id="3_okpvh"]
+[ext_resource type="Texture2D" uid="uid://crc22omccnsfq" path="res://Assets/Img/LukasLogo(1).png" id="5_lwu3c"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wlfsu"]
 size = Vector2(32, 32)
@@ -37,11 +38,8 @@ z_index = 5
 
 [node name="Sprite2D" type="Sprite2D" parent="Player"]
 position = Vector2(24, 24)
-scale = Vector2(2, 2)
-texture = ExtResource("3_okpvh")
-hframes = 9
-vframes = 8
-frame = 13
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("5_lwu3c")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 position = Vector2(24, 24)

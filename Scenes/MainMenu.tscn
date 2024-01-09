@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://chv6jlefmd0ql" path="res://Assets/Img/Parallax/Menu/clouds_mg_3.png" id="6_7sran"]
 [ext_resource type="Texture2D" uid="uid://cksgm3he57nyr" path="res://Assets/Img/Parallax/Menu/clouds_mg_2.png" id="7_kth13"]
 [ext_resource type="Texture2D" uid="uid://35udk8cn7aum" path="res://Assets/Img/Parallax/Menu/clouds_mg_1.png" id="8_jb57q"]
-[ext_resource type="PackedScene" uid="uid://dp7arl8smy6nk" path="res://Scenes/Components/tutorials.tscn" id="12_qk7mm"]
+[ext_resource type="PackedScene" path="res://Scenes/Components/tutorials.tscn" id="12_qk7mm"]
 
 [node name="Control" type="Control"]
 layout_mode = 3

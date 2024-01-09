@@ -188,4 +188,11 @@ amount = 10
 process_material = SubResource("ParticleProcessMaterial_ph3j8")
 texture = ExtResource("5_dqwlr")
 
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(1.19209e-07, 3)
+scale = Vector2(2.375, 2.375)
+energy = 1.5
+texture = ExtResource("5_dqwlr")
+offset = Vector2(0, -48)
+
 [connection signal="timeout" from="LightningTimer" to="." method="_on_lightning_timer_timeout"]
