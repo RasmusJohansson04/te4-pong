@@ -12,7 +12,6 @@ var item_url = "res://Assets/Img/Item Icons/"
 var dot_png = ".png"
 
 func _ready():
-	hide()
 	item_stats = []
 	var json = $JsonData
 	var json_size = json.json_file_size()
@@ -112,6 +111,7 @@ func _on_ui_swich_item_button_3():
 	set_label_name($UI_SwichItem.send_name)
 	set_image($UI_SwichItem.send_name)
 	set_decsription($UI_SwichItem.send_desc)
+
 
 func _on_ui_swich_item_yes_button():
 	hide()
