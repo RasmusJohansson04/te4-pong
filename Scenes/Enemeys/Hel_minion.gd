@@ -18,7 +18,6 @@ func _ready():
 	resistance = 0
 
 func shoot():
-	print(owner)
 	owner.spawn_ball(position.x - $Area2D/CollisionShape2D.shape.size.x/2 - global.ball_size.x, position.y)
 	$Timer.wait_time = [0.5,1,2].pick_random()
 	$Timer.start()

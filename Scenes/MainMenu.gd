@@ -8,6 +8,7 @@ func _on_button_play_pressed():
 	$ButtonPlay.disabled = true
 	$ButtonOptions.disabled = true
 	$ButtonCredits.disabled = true
+	$ButtonTutorial.disabled = true
 	global.main_song_timer = $Music.get_playback_position()
 	$Music.stop()
 
