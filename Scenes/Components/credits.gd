@@ -72,11 +72,13 @@ var credits = [
 	],[
 		"Play Tester",
 		"Lukas Johansson",
-		""
+		"BeepingSeath"
 	],[
 		"Tools used",
 		"Developed with Godot Engine",
 		"https://godotengine.org/license",
+		"Creadit code by benbishopnz",
+		"https://github.com/benbishopnz/godot-credits/tree/master"
 	],[
 		"Special thanks",
 		"Alexander jag vet inte hur man stavar efternamnet",
