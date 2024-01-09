@@ -46,6 +46,9 @@ offset_right = -235.0
 offset_bottom = -237.0
 
 [connection signal="pressed" from="YesButton" to="." method="_on_yes_button_pressed"]
+[connection signal="button_mouse_exit" from="button1" to="." method="_on_button_1_button_mouse_exit"]
 [connection signal="button_pressed" from="button1" to="." method="_on_button_1_button_pressed"]
+[connection signal="button_mouse_exit" from="button2" to="." method="_on_button_2_button_mouse_exit"]
 [connection signal="button_pressed" from="button2" to="." method="_on_button_2_button_pressed"]
+[connection signal="button_mouse_exit" from="button3" to="." method="_on_button_3_button_mouse_exit"]
 [connection signal="button_pressed" from="button3" to="." method="_on_button_3_button_pressed"]

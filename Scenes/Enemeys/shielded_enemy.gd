@@ -24,9 +24,7 @@ func _ready():
 
 func shoot():
 	if(can_shoot): 
-		print("🥵")
 		$ShootSound.play()
-		print(last_degrees)
 		if(last_degrees > 0.5):
 			last_degrees = randf_range(0, 1)
 			get_tree().get_first_node_in_group("world").spawn_ball(position.x - $Area2D/CollisionShape2D.shape.size.x/2 - global.ball_size.x - 20, position.y, -1 , last_degrees,damage)

@@ -72,5 +72,37 @@ func get_button_mouse_focus():
 	var button1 = get_node("button1").mouse_focus
 	var button2 = get_node("button2").mouse_focus
 	var button3 = get_node("button3").mouse_focus
-	$YesButton.disabled = False.FalseFalse
+	$YesButton.disabled = false
 	return [button1, button2, button3]
+
+
+func _on_button_1_button_mouse_exit():
+	update_text_when_mouse_exit()
+
+func _on_button_2_button_mouse_exit():
+	update_text_when_mouse_exit()
+
+
+func _on_button_3_button_mouse_exit():
+	update_text_when_mouse_exit()
+
+
+func update_text_when_mouse_exit():
+	var button1_focus = get_node("button1").mouse_focus
+	var button2_focus = get_node("button2").mouse_focus
+	var button3_focus = get_node("button3").mouse_focus
+	match true:
+		button1_focus:
+			send_name = $button1.item_stats[0]
+			send_desc = $button1.item_stats[1]
+			button1.emit()
+		button2_focus:
+			send_name = $button2.item_stats[0]
+			send_desc = $button2.item_stats[1]
+			button2.emit()
+		button3_focus:
+			send_name = $button3.item_stats[0]
+			send_desc = $button3.item_stats[1]
+			button3.emit()
+		_:
+			return
