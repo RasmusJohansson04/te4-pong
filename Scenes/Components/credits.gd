@@ -44,7 +44,8 @@ var credits = [
 		"Pixels Flush",
 		"Prince Albert of Saxe-Coburg and Gotha",
 		"Tim Nilsson",
-		"Vnitti"
+		"Vnitti",
+		"Lornn"
 	],[
 		"Effects",
 		"Raffaele Picca"
